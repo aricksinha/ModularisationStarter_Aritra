@@ -49,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A30EC5C2EF72C56004FC815 /* Container */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Container; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,10 +104,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A30EC5A2EF722F7004FC815 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				9A30EC5C2EF72C56004FC815 /* Container */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
 		FBA9D0522B7B936A00FDF616 = {
 			isa = PBXGroup;
 			children = (
 				FBE2717F2B8F46E400652C5C /* ModularisationStarter.xctestplan */,
+				9A30EC5A2EF722F7004FC815 /* Packages */,
 				FBA9D05D2B7B936A00FDF616 /* ModularisationStarter */,
 				FBA9D0A42B7CD3B100FDF616 /* ModularisationStarterTests */,
 				FBA9D05C2B7B936A00FDF616 /* Products */,
