@@ -4,7 +4,7 @@
 //
 //  Created by Emre Havan on 14.02.24.
 //
-
+import AnalyticsInterface
 import Foundation
 
 final class AnalyticsEventTracker: AnalyticsEventTracking {

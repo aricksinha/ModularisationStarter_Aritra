@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol AnalyticsEventTracking {
+public protocol AnalyticsEventTracking {
     func trackEvent(_ event: AnalyticsEvent)
 }

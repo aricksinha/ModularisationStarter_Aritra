@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct AnalyticsEvent {
+public struct AnalyticsEvent {
 
-    let name: String
-    let parameters: [String: Any]?
+    public let name: String
+    public let parameters: [String: Any]?
 
-    init(name: String, parameters: [String : Any]? = nil) {
+    public init(name: String, parameters: [String : Any]? = nil) {
         self.name = name
         self.parameters = parameters
     }

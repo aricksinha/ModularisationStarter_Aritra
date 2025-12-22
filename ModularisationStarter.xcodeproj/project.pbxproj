@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC692EF8BD72004FC815 /* AnalyticsInterface */; };
+		9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC6B2EF8BD76004FC815 /* Container */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -33,9 +35,6 @@
 		FBA9D0B72B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B62B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift */; };
 		FBA9D0B92B7CFB7900FDF616 /* ArtistServiceTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B82B7CFB7900FDF616 /* ArtistServiceTestMock.swift */; };
 		FBA9D0BC2B7DFB5000FDF616 /* AnalyticsEventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0BB2B7DFB5000FDF616 /* AnalyticsEventName.swift */; };
-		FBA9D0BE2B7DFB7200FDF616 /* AnalyticsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0BD2B7DFB7200FDF616 /* AnalyticsEvent.swift */; };
-		FBA9D0C02B7DFB8000FDF616 /* AnalyticsEventTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0BF2B7DFB8000FDF616 /* AnalyticsEventTracking.swift */; };
-		FBA9D0C22B7DFB9B00FDF616 /* AnalyticsEventTrackerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0C12B7DFB9B00FDF616 /* AnalyticsEventTrackerMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		9A30EC5C2EF72C56004FC815 /* Container */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Container; sourceTree = "<group>"; };
+		9A30EC672EF8BCEC004FC815 /* AnalyticsInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticsInterface; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,9 +80,6 @@
 		FBA9D0B62B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		FBA9D0B82B7CFB7900FDF616 /* ArtistServiceTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistServiceTestMock.swift; sourceTree = "<group>"; };
 		FBA9D0BB2B7DFB5000FDF616 /* AnalyticsEventName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventName.swift; sourceTree = "<group>"; };
-		FBA9D0BD2B7DFB7200FDF616 /* AnalyticsEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEvent.swift; sourceTree = "<group>"; };
-		FBA9D0BF2B7DFB8000FDF616 /* AnalyticsEventTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTracking.swift; sourceTree = "<group>"; };
-		FBA9D0C12B7DFB9B00FDF616 /* AnalyticsEventTrackerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTrackerMock.swift; sourceTree = "<group>"; };
 		FBE2717F2B8F46E400652C5C /* ModularisationStarter.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModularisationStarter.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +96,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */,
+				9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +116,16 @@
 		9A30EC662EF8B6C3004FC815 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				9A30EC672EF8BCEC004FC815 /* AnalyticsInterface */,
 			);
 			path = Analytics;
+			sourceTree = "<group>";
+		};
+		9A30EC682EF8BD72004FC815 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		FBA9D0522B7B936A00FDF616 = {
@@ -128,6 +136,7 @@
 				FBA9D05D2B7B936A00FDF616 /* ModularisationStarter */,
 				FBA9D0A42B7CD3B100FDF616 /* ModularisationStarterTests */,
 				FBA9D05C2B7B936A00FDF616 /* Products */,
+				9A30EC682EF8BD72004FC815 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,9 +290,6 @@
 			children = (
 				FBA9D0922B7CC47100FDF616 /* AnalyticsEventTracker.swift */,
 				FBA9D0BB2B7DFB5000FDF616 /* AnalyticsEventName.swift */,
-				FBA9D0BD2B7DFB7200FDF616 /* AnalyticsEvent.swift */,
-				FBA9D0BF2B7DFB8000FDF616 /* AnalyticsEventTracking.swift */,
-				FBA9D0C12B7DFB9B00FDF616 /* AnalyticsEventTrackerMock.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -304,6 +310,9 @@
 			dependencies = (
 			);
 			name = ModularisationStarter;
+			packageProductDependencies = (
+				9A30EC692EF8BD72004FC815 /* AnalyticsInterface */,
+			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
 			productType = "com.apple.product-type.application";
@@ -322,6 +331,10 @@
 				FBA9D0A82B7CD3B100FDF616 /* PBXTargetDependency */,
 			);
 			name = ModularisationStarterTests;
+			packageProductDependencies = (
+				9A30EC692EF8BD72004FC815 /* AnalyticsInterface */,
+				9A30EC6B2EF8BD76004FC815 /* Container */,
+			);
 			productName = ModularisationStarterTests;
 			productReference = FBA9D0A32B7CD3B100FDF616 /* ModularisationStarterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -355,6 +368,10 @@
 				tr,
 			);
 			mainGroup = FBA9D0522B7B936A00FDF616;
+			packageReferences = (
+				9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "AnalyticsInterface" */,
+				9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Container" */,
+			);
 			productRefGroup = FBA9D05C2B7B936A00FDF616 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -398,13 +415,10 @@
 				FBA9D08E2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift in Sources */,
 				FBA9D07A2B7B95D400FDF616 /* HomeCoordinator.swift in Sources */,
 				FBA9D0832B7BCA4800FDF616 /* SongDetailsView.swift in Sources */,
-				FBA9D0C02B7DFB8000FDF616 /* AnalyticsEventTracking.swift in Sources */,
-				FBA9D0C22B7DFB9B00FDF616 /* AnalyticsEventTrackerMock.swift in Sources */,
 				FBA9D09E2B7CD25300FDF616 /* String+localised.swift in Sources */,
 				FBA9D08A2B7BD00A00FDF616 /* ArtistDetailsView.swift in Sources */,
 				FBA9D0902B7BD1F800FDF616 /* ArtistService.swift in Sources */,
 				FBA9D07C2B7B95E000FDF616 /* HomeView.swift in Sources */,
-				FBA9D0BE2B7DFB7200FDF616 /* AnalyticsEvent.swift in Sources */,
 				FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */,
 				FBA9D0802B7BB5DA00FDF616 /* HomeService.swift in Sources */,
 				FBA9D0BC2B7DFB5000FDF616 /* AnalyticsEventName.swift in Sources */,
@@ -697,6 +711,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "AnalyticsInterface" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Analytics/AnalyticsInterface;
+		};
+		9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Container" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Container;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A30EC692EF8BD72004FC815 /* AnalyticsInterface */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "AnalyticsInterface" */;
+			productName = AnalyticsInterface;
+		};
+		9A30EC6B2EF8BD76004FC815 /* Container */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Container" */;
+			productName = Container;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FBA9D0532B7B936A00FDF616 /* Project object */;
 }
