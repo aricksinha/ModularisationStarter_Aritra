@@ -9,9 +9,7 @@ import Foundation
 
 final class AnalyticsEventTracker: AnalyticsEventTracking {
 
-    static let shared = AnalyticsEventTracker()
-
-    private init() {
+    init() {
         
     }
     

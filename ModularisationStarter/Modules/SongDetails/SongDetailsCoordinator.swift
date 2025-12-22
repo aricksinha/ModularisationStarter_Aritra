@@ -5,6 +5,7 @@
 //  Created by Emre Havan on 13.02.24.
 //
 import AnalyticsInterface
+import Container
 import SwiftUI
 
 final class SongDetailsCoordinator {
@@ -16,10 +17,14 @@ final class SongDetailsCoordinator {
     }
 
     func makeViewController(with song: Song) -> UIViewController {
+        let analyticsEventTracker = Container.shared.resolve(
+            resolvingType: .singleInstance,
+            for: AnalyticsEventTracking.self
+        )
         let view = SongDetailsView(
             viewModel: .init(
                 song: song,
-                analyticsTracker: AnalyticsEventTracker.shared,
+                analyticsTracker: analyticsEventTracker,
                 onGoToArtistTapped: pushArtistDetail(withIdentifier:)
             )
         )

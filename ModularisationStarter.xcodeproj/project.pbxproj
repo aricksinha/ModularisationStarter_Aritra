@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC692EF8BD72004FC815 /* AnalyticsInterface */; };
 		9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC6B2EF8BD76004FC815 /* Container */; };
+		9A30EC7B2EF8BFBB004FC815 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		9A30EC7C2EF8BFBB004FC815 /* AnalyticsInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC692EF8BD72004FC815 /* AnalyticsInterface */; };
+		9A30EC7E2EF937AA004FC815 /* AppDependencyConfigurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30EC7D2EF937AA004FC815 /* AppDependencyConfigurer.swift */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -50,6 +53,7 @@
 /* Begin PBXFileReference section */
 		9A30EC5C2EF72C56004FC815 /* Container */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Container; sourceTree = "<group>"; };
 		9A30EC672EF8BCEC004FC815 /* AnalyticsInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticsInterface; sourceTree = "<group>"; };
+		9A30EC7D2EF937AA004FC815 /* AppDependencyConfigurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyConfigurer.swift; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */,
+				9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,7 +102,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */,
-				9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */,
+				9A30EC7C2EF8BFBB004FC815 /* AnalyticsInterface in Frameworks */,
+				9A30EC7B2EF8BFBB004FC815 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +158,7 @@
 		FBA9D05D2B7B936A00FDF616 /* ModularisationStarter */ = {
 			isa = PBXGroup;
 			children = (
+				9A30EC7D2EF937AA004FC815 /* AppDependencyConfigurer.swift */,
 				FBA9D09C2B7CD24700FDF616 /* Utilities */,
 				FBA9D0952B7CD1D400FDF616 /* Localisation */,
 				FBA9D0912B7CC45C00FDF616 /* Common */,
@@ -312,6 +319,7 @@
 			name = ModularisationStarter;
 			packageProductDependencies = (
 				9A30EC692EF8BD72004FC815 /* AnalyticsInterface */,
+				9A30EC6B2EF8BD76004FC815 /* Container */,
 			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
@@ -369,8 +377,8 @@
 			);
 			mainGroup = FBA9D0522B7B936A00FDF616;
 			packageReferences = (
-				9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "AnalyticsInterface" */,
-				9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Container" */,
+				9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/AnalyticsInterface" */,
+				9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Packages/Container" */,
 			);
 			productRefGroup = FBA9D05C2B7B936A00FDF616 /* Products */;
 			projectDirPath = "";
@@ -420,6 +428,7 @@
 				FBA9D0902B7BD1F800FDF616 /* ArtistService.swift in Sources */,
 				FBA9D07C2B7B95E000FDF616 /* HomeView.swift in Sources */,
 				FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */,
+				9A30EC7E2EF937AA004FC815 /* AppDependencyConfigurer.swift in Sources */,
 				FBA9D0802B7BB5DA00FDF616 /* HomeService.swift in Sources */,
 				FBA9D0BC2B7DFB5000FDF616 /* AnalyticsEventName.swift in Sources */,
 				FBA9D08C2B7BD01A00FDF616 /* ArtistDetailsCoordinator.swift in Sources */,
@@ -713,11 +722,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "AnalyticsInterface" */ = {
+		9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/AnalyticsInterface" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/Analytics/AnalyticsInterface;
 		};
-		9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Container" */ = {
+		9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Packages/Container" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/Container;
 		};
@@ -726,12 +735,12 @@
 /* Begin XCSwiftPackageProductDependency section */
 		9A30EC692EF8BD72004FC815 /* AnalyticsInterface */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "AnalyticsInterface" */;
+			package = 9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/AnalyticsInterface" */;
 			productName = AnalyticsInterface;
 		};
 		9A30EC6B2EF8BD76004FC815 /* Container */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Container" */;
+			package = 9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Packages/Container" */;
 			productName = Container;
 		};
 /* End XCSwiftPackageProductDependency section */

@@ -1,7 +1,7 @@
 import Foundation
 
 public final class Container {
-    public let shared = Container()
+    public static let shared = Container()
     
     // we have 2 types of Depenedencies
     // SINGLE INSTANCE DEPENEDENCIES:  registering single instances for certain types.

@@ -4,7 +4,8 @@
 //
 //  Created by Emre Havan on 13.02.24.
 //
-
+import AnalyticsInterface
+import Container
 import SwiftUI
 
 final class HomeCoordinator {
@@ -16,7 +17,15 @@ final class HomeCoordinator {
     }()
 
     func makeViewController() -> UIViewController {
-        let viewModel = HomeViewModel(homeService: HomeService(), analyticsTracker: AnalyticsEventTracker.shared, onSongSelected: pushSongDetail(_:))
+        let analyticsEventTracker = Container.shared.resolve(
+            resolvingType: .singleInstance,
+            for: AnalyticsEventTracking.self
+        )
+        let viewModel = HomeViewModel(
+            homeService: HomeService(),
+            analyticsTracker: analyticsEventTracker,
+            onSongSelected: pushSongDetail(_:)
+        )
         let homeView = HomeView(viewModel: viewModel)
         let hostingVC = UIHostingController(rootView: homeView)
         navigationController.setViewControllers([hostingVC], animated: false)
