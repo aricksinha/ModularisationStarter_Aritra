@@ -23,6 +23,13 @@
         "identifier" : "FBA9D0A22B7CD3B100FDF616",
         "name" : "ModularisationStarterTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Packages\/Container",
+        "identifier" : "ContainerTests",
+        "name" : "ContainerTests"
+      }
     }
   ],
   "version" : 1

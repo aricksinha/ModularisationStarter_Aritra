@@ -4,9 +4,10 @@
 //
 //  Created by Aritra on 22/12/25.
 //
+import Analytics
+import AnalyticsInterface
 import Container
 import Foundation
-import AnalyticsInterface
 
 // here we will register all our dependencies, core dependencies for our project
 enum AppDependencyConfigurer {

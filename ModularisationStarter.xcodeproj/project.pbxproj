@@ -12,6 +12,9 @@
 		9A30EC7B2EF8BFBB004FC815 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		9A30EC7C2EF8BFBB004FC815 /* AnalyticsInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC692EF8BD72004FC815 /* AnalyticsInterface */; };
 		9A30EC7E2EF937AA004FC815 /* AppDependencyConfigurer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30EC7D2EF937AA004FC815 /* AppDependencyConfigurer.swift */; };
+		9A30EC872EF93874004FC815 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		9A30EC882EF93874004FC815 /* Container in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC6B2EF8BD76004FC815 /* Container */; };
+		9A30EC8B2EFA5408004FC815 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC8A2EFA5408004FC815 /* Analytics */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -29,7 +32,6 @@
 		FBA9D08C2B7BD01A00FDF616 /* ArtistDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08B2B7BD01A00FDF616 /* ArtistDetailsCoordinator.swift */; };
 		FBA9D08E2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08D2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift */; };
 		FBA9D0902B7BD1F800FDF616 /* ArtistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D08F2B7BD1F800FDF616 /* ArtistService.swift */; };
-		FBA9D0932B7CC47100FDF616 /* AnalyticsEventTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0922B7CC47100FDF616 /* AnalyticsEventTracker.swift */; };
 		FBA9D0982B7CD20A00FDF616 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D09A2B7CD20A00FDF616 /* Localizable.strings */; };
 		FBA9D09E2B7CD25300FDF616 /* String+localised.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D09D2B7CD25300FDF616 /* String+localised.swift */; };
 		FBA9D0AF2B7CD3D200FDF616 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0AE2B7CD3D200FDF616 /* HomeViewModelTests.swift */; };
@@ -54,6 +56,7 @@
 		9A30EC5C2EF72C56004FC815 /* Container */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Container; sourceTree = "<group>"; };
 		9A30EC672EF8BCEC004FC815 /* AnalyticsInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticsInterface; sourceTree = "<group>"; };
 		9A30EC7D2EF937AA004FC815 /* AppDependencyConfigurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyConfigurer.swift; sourceTree = "<group>"; };
+		9A30EC892EFA4BE9004FC815 /* Analytics */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Analytics; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		FBA9D08B2B7BD01A00FDF616 /* ArtistDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsCoordinator.swift; sourceTree = "<group>"; };
 		FBA9D08D2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsViewModel.swift; sourceTree = "<group>"; };
 		FBA9D08F2B7BD1F800FDF616 /* ArtistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistService.swift; sourceTree = "<group>"; };
-		FBA9D0922B7CC47100FDF616 /* AnalyticsEventTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventTracker.swift; sourceTree = "<group>"; };
 		FBA9D0992B7CD20A00FDF616 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FBA9D09B2B7CD21300FDF616 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FBA9D09D2B7CD25300FDF616 /* String+localised.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localised.swift"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			files = (
 				9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */,
 				9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */,
+				9A30EC8B2EFA5408004FC815 /* Analytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */,
+				9A30EC882EF93874004FC815 /* Container in Frameworks */,
+				9A30EC872EF93874004FC815 /* (null) in Frameworks */,
 				9A30EC7C2EF8BFBB004FC815 /* AnalyticsInterface in Frameworks */,
+				9A30EC8B2EFA5408004FC815 /* Analytics in Frameworks */,
 				9A30EC7B2EF8BFBB004FC815 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +127,7 @@
 		9A30EC662EF8B6C3004FC815 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
+				9A30EC892EFA4BE9004FC815 /* Analytics */,
 				9A30EC672EF8BCEC004FC815 /* AnalyticsInterface */,
 			);
 			path = Analytics;
@@ -295,7 +301,6 @@
 		FBA9D0BA2B7DFB4100FDF616 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				FBA9D0922B7CC47100FDF616 /* AnalyticsEventTracker.swift */,
 				FBA9D0BB2B7DFB5000FDF616 /* AnalyticsEventName.swift */,
 			);
 			path = Analytics;
@@ -320,6 +325,7 @@
 			packageProductDependencies = (
 				9A30EC692EF8BD72004FC815 /* AnalyticsInterface */,
 				9A30EC6B2EF8BD76004FC815 /* Container */,
+				9A30EC8A2EFA5408004FC815 /* Analytics */,
 			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
@@ -342,6 +348,7 @@
 			packageProductDependencies = (
 				9A30EC692EF8BD72004FC815 /* AnalyticsInterface */,
 				9A30EC6B2EF8BD76004FC815 /* Container */,
+				9A30EC8A2EFA5408004FC815 /* Analytics */,
 			);
 			productName = ModularisationStarterTests;
 			productReference = FBA9D0A32B7CD3B100FDF616 /* ModularisationStarterTests.xctest */;
@@ -379,6 +386,7 @@
 			packageReferences = (
 				9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/AnalyticsInterface" */,
 				9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Packages/Container" */,
+				9A30EC8C2EFA540C004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/Analytics" */,
 			);
 			productRefGroup = FBA9D05C2B7B936A00FDF616 /* Products */;
 			projectDirPath = "";
@@ -419,7 +427,6 @@
 				FBA9D0752B7B94D400FDF616 /* RootCoordinator.swift in Sources */,
 				FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */,
 				FBA9D07E2B7BB1BC00FDF616 /* HomeViewModel.swift in Sources */,
-				FBA9D0932B7CC47100FDF616 /* AnalyticsEventTracker.swift in Sources */,
 				FBA9D08E2B7BD18F00FDF616 /* ArtistDetailsViewModel.swift in Sources */,
 				FBA9D07A2B7B95D400FDF616 /* HomeCoordinator.swift in Sources */,
 				FBA9D0832B7BCA4800FDF616 /* SongDetailsView.swift in Sources */,
@@ -730,6 +737,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/Container;
 		};
+		9A30EC8C2EFA540C004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/Analytics" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/Analytics/Analytics;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -742,6 +753,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Packages/Container" */;
 			productName = Container;
+		};
+		9A30EC8A2EFA5408004FC815 /* Analytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A30EC8C2EFA540C004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/Analytics" */;
+			productName = Analytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
