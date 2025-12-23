@@ -5,19 +5,8 @@
 //  Created by Emre Havan on 13.02.24.
 //
 import AnalyticsInterface
+import CommonModels
 import SwiftUI
-
-struct Song: Codable {
-    let id: String
-    let name: String
-    let artistName: String
-    let artistIdentifier: String
-    let lyrics: String
-}
-
-extension Song: Hashable {
-    
-}
 
 struct Artist: Codable {
     let name: String

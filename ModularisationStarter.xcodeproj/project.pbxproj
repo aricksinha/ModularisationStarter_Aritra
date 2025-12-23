@@ -15,6 +15,9 @@
 		9A30EC872EF93874004FC815 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 		9A30EC882EF93874004FC815 /* Container in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC6B2EF8BD76004FC815 /* Container */; };
 		9A30EC8B2EFA5408004FC815 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC8A2EFA5408004FC815 /* Analytics */; };
+		9A30EC982EFA5528004FC815 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		9A30EC992EFA5528004FC815 /* Analytics in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC8A2EFA5408004FC815 /* Analytics */; };
+		9A30EC9C2EFADD73004FC815 /* CommonModels in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30EC9B2EFADD73004FC815 /* CommonModels */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -57,6 +60,7 @@
 		9A30EC672EF8BCEC004FC815 /* AnalyticsInterface */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = AnalyticsInterface; sourceTree = "<group>"; };
 		9A30EC7D2EF937AA004FC815 /* AppDependencyConfigurer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDependencyConfigurer.swift; sourceTree = "<group>"; };
 		9A30EC892EFA4BE9004FC815 /* Analytics */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Analytics; sourceTree = "<group>"; };
+		9A30EC9A2EFADD4B004FC815 /* CommonModels */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = CommonModels; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */,
 				9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */,
 				9A30EC8B2EFA5408004FC815 /* Analytics in Frameworks */,
+				9A30EC9C2EFADD73004FC815 /* CommonModels in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +112,9 @@
 				9A30EC882EF93874004FC815 /* Container in Frameworks */,
 				9A30EC872EF93874004FC815 /* (null) in Frameworks */,
 				9A30EC7C2EF8BFBB004FC815 /* AnalyticsInterface in Frameworks */,
-				9A30EC8B2EFA5408004FC815 /* Analytics in Frameworks */,
+				9A30EC992EFA5528004FC815 /* Analytics in Frameworks */,
+				9A30EC982EFA5528004FC815 /* (null) in Frameworks */,
+				9A30EC9C2EFADD73004FC815 /* CommonModels in Frameworks */,
 				9A30EC7B2EF8BFBB004FC815 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,6 +125,7 @@
 		9A30EC5A2EF722F7004FC815 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				9A30EC9A2EFADD4B004FC815 /* CommonModels */,
 				9A30EC662EF8B6C3004FC815 /* Analytics */,
 				9A30EC5C2EF72C56004FC815 /* Container */,
 			);
@@ -326,6 +334,7 @@
 				9A30EC692EF8BD72004FC815 /* AnalyticsInterface */,
 				9A30EC6B2EF8BD76004FC815 /* Container */,
 				9A30EC8A2EFA5408004FC815 /* Analytics */,
+				9A30EC9B2EFADD73004FC815 /* CommonModels */,
 			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
@@ -349,6 +358,7 @@
 				9A30EC692EF8BD72004FC815 /* AnalyticsInterface */,
 				9A30EC6B2EF8BD76004FC815 /* Container */,
 				9A30EC8A2EFA5408004FC815 /* Analytics */,
+				9A30EC9B2EFADD73004FC815 /* CommonModels */,
 			);
 			productName = ModularisationStarterTests;
 			productReference = FBA9D0A32B7CD3B100FDF616 /* ModularisationStarterTests.xctest */;
@@ -387,6 +397,7 @@
 				9A30EC6D2EF8BD7A004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/AnalyticsInterface" */,
 				9A30EC6E2EF8BD7E004FC815 /* XCLocalSwiftPackageReference "Packages/Container" */,
 				9A30EC8C2EFA540C004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/Analytics" */,
+				9A30EC9D2EFADD77004FC815 /* XCLocalSwiftPackageReference "Packages/CommonModels" */,
 			);
 			productRefGroup = FBA9D05C2B7B936A00FDF616 /* Products */;
 			projectDirPath = "";
@@ -741,6 +752,10 @@
 			isa = XCLocalSwiftPackageReference;
 			relativePath = Packages/Analytics/Analytics;
 		};
+		9A30EC9D2EFADD77004FC815 /* XCLocalSwiftPackageReference "Packages/CommonModels" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/CommonModels;
+		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -758,6 +773,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9A30EC8C2EFA540C004FC815 /* XCLocalSwiftPackageReference "Packages/Analytics/Analytics" */;
 			productName = Analytics;
+		};
+		9A30EC9B2EFADD73004FC815 /* CommonModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A30EC9D2EFADD77004FC815 /* XCLocalSwiftPackageReference "Packages/CommonModels" */;
+			productName = CommonModels;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

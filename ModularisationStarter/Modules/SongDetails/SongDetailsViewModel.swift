@@ -6,6 +6,7 @@
 //
 
 import AnalyticsInterface
+import CommonModels
 import Foundation
 
 final class SongDetailsViewModel {

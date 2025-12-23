@@ -4,7 +4,7 @@
 //
 //  Created by Emre Havan on 13.02.24.
 //
-
+import CommonModels
 import Foundation
 
 protocol ArtistServing {

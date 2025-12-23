@@ -7,6 +7,7 @@
 
 import XCTest
 import AnalyticsInterface
+import CommonModels
 @testable import ModularisationStarter
 
 final class HomeViewModelTests: XCTestCase {

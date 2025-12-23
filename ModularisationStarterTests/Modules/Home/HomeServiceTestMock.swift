@@ -4,7 +4,7 @@
 //
 //  Created by Emre Havan on 14.02.24.
 //
-
+import CommonModels
 import Foundation
 import XCTest
 @testable import ModularisationStarter

@@ -5,6 +5,7 @@
 //  Created by Emre Havan on 13.02.24.
 //
 import AnalyticsInterface
+import CommonModels
 import Foundation
 
 final class ArtistDetailsViewModel: ObservableObject {
