@@ -4,6 +4,7 @@
 //
 //  Created by Emre Havan on 13.02.24.
 //
+import ArtistDetailPluginAPI
 import AnalyticsInterface
 import CommonModels
 import Container
@@ -35,8 +36,11 @@ final class SongDetailsCoordinator {
     }
 
     private func pushArtistDetail(withIdentifier id: String) {
-        let coordinator = ArtistDetailsCoordinator(navigationController: navigationController)
-        let view = coordinator.makeViewController(artistIdentifier: id)
+        let artistDetailGateway = Container.shared.resolve(resolvingType: .closureBased, for: ArtistDetailPluginAPI.self)
+        let view = artistDetailGateway.makeArtistDetailModule(
+            navigationController: navigationController,
+            artistIdentifier: id
+        )
         navigationController?.pushViewController(view, animated: true)
     }
 }

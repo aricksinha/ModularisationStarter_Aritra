@@ -6,6 +6,7 @@
 //
 import AnalyticsInterface
 import SwiftUI
+import Utilities
 
 struct ArtistDetailsView: View {
 

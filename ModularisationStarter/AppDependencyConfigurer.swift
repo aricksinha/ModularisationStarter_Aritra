@@ -4,6 +4,8 @@
 //
 //  Created by Aritra on 22/12/25.
 //
+import ArtistDetail
+import ArtistDetailPluginAPI
 import Analytics
 import AnalyticsInterface
 import Container
@@ -16,6 +18,15 @@ enum AppDependencyConfigurer {
         Container.shared.register(
             type: .singleInstance(analyticsTracker),
             for: AnalyticsEventTracking.self
+        )
+        
+        let artistDetailClosure: () -> ArtistDetailPluginAPI = {
+            ArtistDetailGateway()
+        }
+        
+        Container.shared.register(
+            type: .closureBased(artistDetailClosure),
+            for: ArtistDetailPluginAPI.self
         )
     }
 }

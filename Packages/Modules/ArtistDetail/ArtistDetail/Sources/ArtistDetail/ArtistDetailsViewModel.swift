@@ -40,7 +40,7 @@ final class ArtistDetailsViewModel: ObservableObject {
     }
 
     func didSelectSong(_ song: Song) {
-        analyticsTracker.trackEvent(.init(name: AnalyticsEventName.songTappedFromArtistDetail))
+        analyticsTracker.trackEvent(.init(name: ArtistDetailEventName.songTappedFromArtistDetail))
         onSongSelected(song)
     }
 
