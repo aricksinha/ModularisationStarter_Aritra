@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Utilities
 
 final class RootTabBarController: UITabBarController {
 
