@@ -26,6 +26,7 @@
 		9A30ECB92EFC287F004FC815 /* ArtistDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 9A30ECB82EFC287F004FC815 /* ArtistDetail */; };
 		9A3F4A4C2EFC2AE80014A065 /* ArtistDetail in Frameworks */ = {isa = PBXBuildFile; productRef = 9A3F4A4B2EFC2AE80014A065 /* ArtistDetail */; };
 		9A86C0DB2EFC308F00C5634F /* ArtistDetailPluginAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 9A86C0DA2EFC308F00C5634F /* ArtistDetailPluginAPI */; };
+		9A86C0DE2F00C4C700C5634F /* TemporaryMainPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 9A86C0DD2F00C4C700C5634F /* TemporaryMainPackage */; };
 		FBA9D05F2B7B936A00FDF616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */; };
 		FBA9D0612B7B936A00FDF616 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */; };
 		FBA9D0682B7B936E00FDF616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D0672B7B936E00FDF616 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		9A30ECA72EFAE2CE004FC815 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Utilities; sourceTree = "<group>"; };
 		9A30ECB62EFC2835004FC815 /* ArtistDetail */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ArtistDetail; sourceTree = "<group>"; };
 		9A86C0D92EFC305E00C5634F /* ArtistDetailPluginAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ArtistDetailPluginAPI; path = Packages/Modules/ArtistDetailPluginAPI; sourceTree = SOURCE_ROOT; };
+		9A86C0DC2F00C2A900C5634F /* TemporaryMainPackage */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = TemporaryMainPackage; sourceTree = "<group>"; };
 		FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModularisationStarter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D05E2B7B936A00FDF616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBA9D0602B7B936A00FDF616 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A86C0DE2F00C4C700C5634F /* TemporaryMainPackage in Frameworks */,
 				9A30EC6A2EF8BD72004FC815 /* AnalyticsInterface in Frameworks */,
 				9A30EC6C2EF8BD76004FC815 /* Container in Frameworks */,
 				9A30EC8B2EFA5408004FC815 /* Analytics in Frameworks */,
@@ -133,6 +136,7 @@
 		9A30EC5A2EF722F7004FC815 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
+				9A86C0DC2F00C2A900C5634F /* TemporaryMainPackage */,
 				9A30ECB42EFB8E1B004FC815 /* Modules */,
 				9A30ECA72EFAE2CE004FC815 /* Utilities */,
 				9A30EC9A2EFADD4B004FC815 /* CommonModels */,
@@ -344,6 +348,7 @@
 				9A30ECA82EFAE2F9004FC815 /* Utilities */,
 				9A3F4A4B2EFC2AE80014A065 /* ArtistDetail */,
 				9A86C0DA2EFC308F00C5634F /* ArtistDetailPluginAPI */,
+				9A86C0DD2F00C4C700C5634F /* TemporaryMainPackage */,
 			);
 			productName = ModularisationStarter;
 			productReference = FBA9D05B2B7B936A00FDF616 /* ModularisationStarter.app */;
@@ -819,6 +824,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 9A3F4A4D2EFC2B2E0014A065 /* XCLocalSwiftPackageReference "Packages/Modules/ArtistDetailPluginAPI" */;
 			productName = ArtistDetailPluginAPI;
+		};
+		9A86C0DD2F00C4C700C5634F /* TemporaryMainPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TemporaryMainPackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

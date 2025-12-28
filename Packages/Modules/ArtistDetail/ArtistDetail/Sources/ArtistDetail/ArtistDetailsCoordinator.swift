@@ -8,6 +8,7 @@ import AnalyticsInterface
 import CommonModels
 import Container
 import SwiftUI
+import TemporaryMainPackage
 
 final class ArtistDetailsCoordinator {
 
@@ -35,8 +36,19 @@ final class ArtistDetailsCoordinator {
     }
 
     func pushSongDetail(_ song: Song) {
+        guard let navigationController else {
+            return
+        }
+        let temporaryGateway = Container.shared.resolve(
+            resolvingType: .closureBased,
+            for: TemporaryMainPackage.self
+        )
+        let songDetailView =  temporaryGateway.makeSongDetailModule(
+            navigationController: navigationController,
+            song: song
+        )
 //        let coordinator = SongDetailsCoordinator(navigationController: navigationController)
 //        let songDetailView = coordinator.makeViewController(with: song)
-//        navigationController?.pushViewController(songDetailView, animated: true)
+        navigationController.pushViewController(songDetailView, animated: true)
     }
 }

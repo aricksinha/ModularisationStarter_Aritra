@@ -8,8 +8,11 @@ import ArtistDetail
 import ArtistDetailPluginAPI
 import Analytics
 import AnalyticsInterface
+import CommonModels
 import Container
 import Foundation
+import TemporaryMainPackage
+import UIKit
 
 // here we will register all our dependencies, core dependencies for our project
 enum AppDependencyConfigurer {
@@ -28,5 +31,24 @@ enum AppDependencyConfigurer {
             type: .closureBased(artistDetailClosure),
             for: ArtistDetailPluginAPI.self
         )
+        
+        let temporaryGateway: () -> TemporaryMainPackage = {
+            TemporaryMainTargetGateway()
+        }
+        Container.shared.register(
+            type: .closureBased(temporaryGateway),
+            for: TemporaryMainPackage.self
+        )
+    }
+}
+
+final class TemporaryMainTargetGateway: TemporaryMainPackage {
+    func makeSongDetailModule(
+        navigationController: UINavigationController,
+        song: Song
+    ) -> UIViewController{
+        let coordinator = SongDetailsCoordinator(navigationController: navigationController)
+        let songDetailView = coordinator.makeViewController(with: song)
+        return songDetailView
     }
 }
