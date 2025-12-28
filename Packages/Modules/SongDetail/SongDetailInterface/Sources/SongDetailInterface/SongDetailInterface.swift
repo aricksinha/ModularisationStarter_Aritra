@@ -1,7 +1,7 @@
 import CommonModels
 import UIKit
 
-public protocol TemporaryMainPackage {
+public protocol SongDetailInterface {
     func makeSongDetailModule(
         navigationController: UINavigationController,
         song: Song

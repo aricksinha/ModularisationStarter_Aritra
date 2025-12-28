@@ -8,7 +8,7 @@ import AnalyticsInterface
 import CommonModels
 import Container
 import SwiftUI
-import TemporaryMainPackage
+import SongDetailInterface
 
 final class ArtistDetailsCoordinator {
 
@@ -39,16 +39,14 @@ final class ArtistDetailsCoordinator {
         guard let navigationController else {
             return
         }
-        let temporaryGateway = Container.shared.resolve(
+        let songDetailGateway = Container.shared.resolve(
             resolvingType: .closureBased,
-            for: TemporaryMainPackage.self
+            for: SongDetailInterface.self
         )
-        let songDetailView =  temporaryGateway.makeSongDetailModule(
+        let songDetailView =  songDetailGateway.makeSongDetailModule(
             navigationController: navigationController,
             song: song
         )
-//        let coordinator = SongDetailsCoordinator(navigationController: navigationController)
-//        let songDetailView = coordinator.makeViewController(with: song)
         navigationController.pushViewController(songDetailView, animated: true)
     }
 }

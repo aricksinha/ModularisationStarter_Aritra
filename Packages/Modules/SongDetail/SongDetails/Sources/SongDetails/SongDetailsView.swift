@@ -7,6 +7,7 @@
 import AnalyticsInterface
 import CommonModels
 import SwiftUI
+import Utilities
 
 struct SongDetailsView: View {
 

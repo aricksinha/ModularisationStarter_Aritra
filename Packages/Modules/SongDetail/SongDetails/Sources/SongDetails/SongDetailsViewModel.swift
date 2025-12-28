@@ -9,6 +9,9 @@ import AnalyticsInterface
 import CommonModels
 import Foundation
 
+enum SongDetailsEventName {
+    static let artistTappedFromSongDetail = "artist_tapped_from_song_detail"
+}
 final class SongDetailsViewModel {
 
     private let song: Song
@@ -36,7 +39,7 @@ final class SongDetailsViewModel {
     // MARK: - Actions
 
     func didTapGoToArtist() {
-        analyticsTracker.trackEvent(.init(name: AnalyticsEventName.artistTappedFromSongDetail))
+        analyticsTracker.trackEvent(.init(name: SongDetailsEventName.artistTappedFromSongDetail))
         onGoToArtistTapped(song.artistIdentifier)
     }
 }

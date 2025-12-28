@@ -7,6 +7,7 @@
 import AnalyticsInterface
 import CommonModels
 import Container
+import SongDetailInterface
 import SwiftUI
 
 final class HomeCoordinator {
@@ -34,8 +35,14 @@ final class HomeCoordinator {
     }
 
     func pushSongDetail(_ song: Song) {
-        let coordinator = SongDetailsCoordinator(navigationController: navigationController)
-        let songDetailView = coordinator.makeViewController(with: song)
+        let songDetailInterface = Container.shared.resolve(
+            resolvingType: .closureBased,
+            for: SongDetailInterface.self
+        )
+        let songDetailView = songDetailInterface.makeSongDetailModule(
+            navigationController: navigationController,
+            song: song
+        )
         navigationController.pushViewController(songDetailView, animated: true)
     }
 }

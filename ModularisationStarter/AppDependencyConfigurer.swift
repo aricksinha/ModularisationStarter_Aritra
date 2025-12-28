@@ -10,19 +10,21 @@ import Analytics
 import AnalyticsInterface
 import CommonModels
 import Container
-import Foundation
-import TemporaryMainPackage
+import SongDetails
+import SongDetailInterface
 import UIKit
 
 // here we will register all our dependencies, core dependencies for our project
 enum AppDependencyConfigurer {
     static func configure() {
+        //MARK: - Analytics Registration
        let analyticsTracker = AnalyticsEventTracker()
         Container.shared.register(
             type: .singleInstance(analyticsTracker),
             for: AnalyticsEventTracking.self
         )
         
+        //MARK: - ARTIST DETAIL Registration
         let artistDetailClosure: () -> ArtistDetailPluginAPI = {
             ArtistDetailGateway()
         }
@@ -32,23 +34,14 @@ enum AppDependencyConfigurer {
             for: ArtistDetailPluginAPI.self
         )
         
-        let temporaryGateway: () -> TemporaryMainPackage = {
-            TemporaryMainTargetGateway()
+        //MARK: - SONG DETAIL Registration
+        let songDetailGateway: () -> SongDetailInterface = {
+            SongDetailsGateway()
         }
+        
         Container.shared.register(
-            type: .closureBased(temporaryGateway),
-            for: TemporaryMainPackage.self
+            type: .closureBased(songDetailGateway),
+            for: SongDetailInterface.self
         )
-    }
-}
-
-final class TemporaryMainTargetGateway: TemporaryMainPackage {
-    func makeSongDetailModule(
-        navigationController: UINavigationController,
-        song: Song
-    ) -> UIViewController{
-        let coordinator = SongDetailsCoordinator(navigationController: navigationController)
-        let songDetailView = coordinator.makeViewController(with: song)
-        return songDetailView
     }
 }

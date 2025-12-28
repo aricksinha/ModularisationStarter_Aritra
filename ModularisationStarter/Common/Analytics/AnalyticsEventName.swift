@@ -9,5 +9,4 @@ import Foundation
 
 enum AnalyticsEventName {
     static let songTappedFromHome = "song_tapped_from_home"
-    static let artistTappedFromSongDetail = "artist_tapped_from_song_detail"
 }
