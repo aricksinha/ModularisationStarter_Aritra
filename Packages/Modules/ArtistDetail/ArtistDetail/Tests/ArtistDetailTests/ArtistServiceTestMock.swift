@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import ModularisationStarter
+@testable import ArtistDetail
 
 final class ArtistServiceTestMock: ArtistServing {
 

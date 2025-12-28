@@ -30,6 +30,20 @@
         "identifier" : "ContainerTests",
         "name" : "ContainerTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Packages\/Modules\/ArtistDetail\/ArtistDetail",
+        "identifier" : "ArtistDetailTests",
+        "name" : "ArtistDetailTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Packages\/Modules\/SongDetail\/SongDetails",
+        "identifier" : "SongDetailsTests",
+        "name" : "SongDetailsTests"
+      }
     }
   ],
   "version" : 1

@@ -8,7 +8,7 @@
 import XCTest
 import AnalyticsInterface
 import CommonModels
-@testable import ModularisationStarter
+@testable import ArtistDetail
 
 final class ArtistDetailsViewModelTests: XCTestCase {
 
@@ -81,7 +81,7 @@ final class ArtistDetailsViewModelTests: XCTestCase {
 
         XCTAssertEqual(1, analyticsTracker.trackedEvents.count)
         let trackedEvent = try XCTUnwrap(analyticsTracker.trackedEvents.first)
-        XCTAssertEqual(trackedEvent.name, AnalyticsEventName.songTappedFromArtistDetail)
+        XCTAssertEqual(trackedEvent.name, ArtistDetailEventName.songTappedFromArtistDetail)
     }
 
     // MARK: - Utilities

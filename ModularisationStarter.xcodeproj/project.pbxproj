@@ -41,9 +41,6 @@
 		FBA9D0982B7CD20A00FDF616 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FBA9D09A2B7CD20A00FDF616 /* Localizable.strings */; };
 		FBA9D0AF2B7CD3D200FDF616 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0AE2B7CD3D200FDF616 /* HomeViewModelTests.swift */; };
 		FBA9D0B12B7CD6A200FDF616 /* HomeServiceTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B02B7CD6A200FDF616 /* HomeServiceTestMock.swift */; };
-		FBA9D0B42B7CF52C00FDF616 /* SongDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B32B7CF52C00FDF616 /* SongDetailsViewModelTests.swift */; };
-		FBA9D0B72B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B62B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift */; };
-		FBA9D0B92B7CFB7900FDF616 /* ArtistServiceTestMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0B82B7CFB7900FDF616 /* ArtistServiceTestMock.swift */; };
 		FBA9D0BC2B7DFB5000FDF616 /* AnalyticsEventName.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA9D0BB2B7DFB5000FDF616 /* AnalyticsEventName.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,9 +82,6 @@
 		FBA9D0A32B7CD3B100FDF616 /* ModularisationStarterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModularisationStarterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA9D0AE2B7CD3D200FDF616 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		FBA9D0B02B7CD6A200FDF616 /* HomeServiceTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceTestMock.swift; sourceTree = "<group>"; };
-		FBA9D0B32B7CF52C00FDF616 /* SongDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailsViewModelTests.swift; sourceTree = "<group>"; };
-		FBA9D0B62B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistDetailsViewModelTests.swift; sourceTree = "<group>"; };
-		FBA9D0B82B7CFB7900FDF616 /* ArtistServiceTestMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistServiceTestMock.swift; sourceTree = "<group>"; };
 		FBA9D0BB2B7DFB5000FDF616 /* AnalyticsEventName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsEventName.swift; sourceTree = "<group>"; };
 		FBE2717F2B8F46E400652C5C /* ModularisationStarter.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = ModularisationStarter.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -286,8 +280,6 @@
 		FBA9D0AC2B7CD3BB00FDF616 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				FBA9D0B52B7CFADB00FDF616 /* ArtistDetails */,
-				FBA9D0B22B7CF51B00FDF616 /* SongDetails */,
 				FBA9D0AD2B7CD3C600FDF616 /* Home */,
 			);
 			path = Modules;
@@ -300,23 +292,6 @@
 				FBA9D0B02B7CD6A200FDF616 /* HomeServiceTestMock.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		FBA9D0B22B7CF51B00FDF616 /* SongDetails */ = {
-			isa = PBXGroup;
-			children = (
-				FBA9D0B32B7CF52C00FDF616 /* SongDetailsViewModelTests.swift */,
-			);
-			path = SongDetails;
-			sourceTree = "<group>";
-		};
-		FBA9D0B52B7CFADB00FDF616 /* ArtistDetails */ = {
-			isa = PBXGroup;
-			children = (
-				FBA9D0B62B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift */,
-				FBA9D0B82B7CFB7900FDF616 /* ArtistServiceTestMock.swift */,
-			);
-			path = ArtistDetails;
 			sourceTree = "<group>";
 		};
 		FBA9D0BA2B7DFB4100FDF616 /* Analytics */ = {
@@ -474,9 +449,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBA9D0B92B7CFB7900FDF616 /* ArtistServiceTestMock.swift in Sources */,
-				FBA9D0B72B7CFAE700FDF616 /* ArtistDetailsViewModelTests.swift in Sources */,
-				FBA9D0B42B7CF52C00FDF616 /* SongDetailsViewModelTests.swift in Sources */,
 				FBA9D0B12B7CD6A200FDF616 /* HomeServiceTestMock.swift in Sources */,
 				FBA9D0AF2B7CD3D200FDF616 /* HomeViewModelTests.swift in Sources */,
 			);
