@@ -19,19 +19,13 @@
     {
       "parallelizable" : true,
       "target" : {
-        "containerPath" : "container:ModularisationStarter.xcodeproj",
-        "identifier" : "FBA9D0A22B7CD3B100FDF616",
-        "name" : "ModularisationStarterTests"
-      }
-    },
-    {
-      "target" : {
         "containerPath" : "container:Packages\/Container",
         "identifier" : "ContainerTests",
         "name" : "ContainerTests"
       }
     },
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:Packages\/Modules\/ArtistDetail\/ArtistDetail",
         "identifier" : "ArtistDetailTests",
@@ -39,10 +33,19 @@
       }
     },
     {
+      "parallelizable" : true,
       "target" : {
         "containerPath" : "container:Packages\/Modules\/SongDetail\/SongDetails",
         "identifier" : "SongDetailsTests",
         "name" : "SongDetailsTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "HomeTests",
+        "name" : "HomeTests"
       }
     }
   ],

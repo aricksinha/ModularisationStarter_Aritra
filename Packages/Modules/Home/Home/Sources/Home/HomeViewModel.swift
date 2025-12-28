@@ -8,6 +8,9 @@ import AnalyticsInterface
 import CommonModels
 import SwiftUI
 
+enum HomeEventName {
+    static let songTappedFromHome = "song_tapped_from_home"
+}
 
 final class HomeViewModel: ObservableObject {
 
@@ -33,7 +36,7 @@ final class HomeViewModel: ObservableObject {
     }
 
     func didSelectSong(_ song: Song) {
-        analyticsTracker.trackEvent(.init(name: AnalyticsEventName.songTappedFromHome))
+        analyticsTracker.trackEvent(.init(name: HomeEventName.songTappedFromHome))
         onSongSelected(song)
     }
 

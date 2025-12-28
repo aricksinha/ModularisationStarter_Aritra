@@ -7,7 +7,7 @@
 import CommonModels
 import Foundation
 import XCTest
-@testable import ModularisationStarter
+@testable import Home
 
 final class HomeServiceTestMock: HomeServing {
 

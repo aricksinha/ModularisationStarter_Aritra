@@ -8,7 +8,7 @@
 import XCTest
 import AnalyticsInterface
 import CommonModels
-@testable import ModularisationStarter
+@testable import Home
 
 final class HomeViewModelTests: XCTestCase {
 
@@ -78,7 +78,7 @@ final class HomeViewModelTests: XCTestCase {
 
         XCTAssertEqual(1, analyticsTracker.trackedEvents.count)
         let trackedEvent = try XCTUnwrap(analyticsTracker.trackedEvents.first)
-        XCTAssertEqual(trackedEvent.name, AnalyticsEventName.songTappedFromHome)
+        XCTAssertEqual(trackedEvent.name, HomeEventName.songTappedFromHome)
     }
 
     // MARK: - Utilities
